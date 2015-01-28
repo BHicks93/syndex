@@ -367,7 +367,7 @@ IOS = navigator.platform == "iPad" || navigator.platform == "iPhone" || navigato
         	var permaURL = $(this).siblings(".post_options_permalink").attr("href");
         	var titleHeight = $(this).parent().siblings(".post_info_overlay").find(".post_info_overlay_headline");
 			    var txt = titleHeight.text();
-			    if (txt.length>145) {
+			    if (txt.length>500) {
 			        titleHeight.html(txt.substring(0,145)+'... <a href="'+permaURL+'"> (Continued)</a>');
 			        titleHeight.removeClass("post_info_overlay_headline").addClass("shortened_headline")
 			    }
